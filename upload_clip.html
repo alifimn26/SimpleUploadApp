@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Short Clip</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #549fce; /* Light grey background */
+            color: #ffffff; /* Dark grey text for readability */
+        }
+        .container {
+            display: flex;        /* Enables flexbox */
+            flex-direction: column; /* Stack children vertically */
+            justify-content: center; /* Center vertically in the container */
+            align-items: center;  /* Center horizontally in the container */
+            height: 100vh;        /* Full view height */
+            text-align: center;   /* Centers text elements */
+        }
+        h1 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control-file {
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            .btn-custom {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Short Clip</h1>
+        <form action="upload_clip.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="clip">Choose a clip:</label>
+                <input type="file" name="clip" id="clip" class="form-control-file" accept="video/*" required>
+            </div>
+            <button type="submit" class="btn btn-custom">Upload</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #549fce; /* Light grey background */
+    color: #333; /* Dark grey text for readability */
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+    background-color: #007bff; /* Primary blue */
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Main Content Styles */
+.container {
+    background: rgb(64, 125, 223); /* White background for content areas */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px; /* Adds space around containers */
+}
+
+.btn {
+    background-color: #007bff; /* Blue background for buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Link Styles */
+a {
+    color: #007bff; /* Blue text for links */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container, footer, header {
+        padding: 10px;
+    }
+    .btn {
+        width: 100%; /* Full width buttons on smaller screens */
+    }
+}
